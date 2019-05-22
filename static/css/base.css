@@ -1,0 +1,218 @@
+
+.header, body {
+    background-color: #fff;
+}
+div {
+    display: block;
+}
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: 1px solid #d8d8d8;
+}
+.header .header-inner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+}
+.header .logo{
+    float: left;
+    width: 150px;
+    height: 80px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: contain;
+}
+.city-container {
+    position: relative;
+    float: left;
+    margin: 0 8px;
+    height: 100%;
+}
+
+.city-container .city-name {
+    display: inline-block;
+    margin-top: 32px;
+    color: #333;
+}
+.city-container.active .city-selected {
+    border-color: #fff #d8d8d8 #fff #d8d8d8;
+}
+.city-container .city-selected {
+    cursor: pointer;
+    height: 100%;
+    padding: 0 10px;
+    border: 1px solid transparent;
+    z-index: 101;
+}
+.city-container .city-name {
+    display: inline-block;
+    margin-top: 32px;
+    color: #333;
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 5px solid #666;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    -webkit-transition: all .2s ease;
+    transition: all .2s ease;
+}
+.city-container .city-list {
+    background-color: #fff;
+    border: 1px solid #d8d8d8;
+    position: absolute;
+    z-index: 100;
+    width: 478px;
+    height: 330px;
+    overflow-y: scroll;
+    left: 0;
+    top: 80px;
+    display: none;
+}
+.city-container .city-list .city-list-header {
+    padding-left: 20px;
+    line-height: 58px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 10px;
+}
+.city-container .city-list .city-list-header a {
+    cursor: pointer;
+}
+.header ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+}
+.header li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+}
+.city-container .city-list ul li span {
+    margin-left: 20px;
+    width: 20px;
+    text-align: center;
+    float: left;
+    vertical-align: top;
+    display: block;
+    background-color: #eee;
+    font-weight: 700;
+    line-height: 20px;
+    margin-top: 5px;
+}
+.city-container .city-list ul li div {
+    margin-left: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+.city-container .city-list ul li div a {
+    display: inline-block;
+    line-height: 24px;
+    margin-top: 3px;
+    padding: 0 5px;
+    text-align: center;
+    cursor: pointer;
+    color: black;
+}
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.main{
+    position: relative;
+    float: left;
+    margin: 0 8px;
+    height: 100%;
+}
+.main a {
+    text-decoration:none;
+    text-align: center;
+    display: inline-block;
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    font-size: 18px;
+    color: #333;
+}
+.movie-list-container {
+    height: 280px;
+    padding: 22px 5px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-box-shadow: inset 0 0 100px 80px #ededed;
+    box-shadow: inset 0 0 100px 80px #ededed;
+    position: relative;
+}
+.movie-list-container .movie-list {
+    white-space: nowrap;
+    position: relative;
+    display: table;
+    left: 0;
+    -webkit-transition: left .2s ease;
+    transition: left .2s ease;
+}
+.movie-list-container .movie {
+    width: 162px;
+    height: 227px;
+    border: 4px solid #fff;
+    -webkit-box-shadow: 0 1px 3px 0 hsla(0,0%,66%,.5);
+    box-shadow: 0 1px 3px 0 hsla(0,0%,66%,.5);
+    display: inline-block;
+    -webkit-transform-origin: 50%;
+    -ms-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transform: scale(.82);
+    -ms-transform: scale(.82);
+    transform: scale(.82);
+    -webkit-transition: -webkit-transform .1s;
+    transition: -webkit-transform .1s;
+    transition: transform .1s,-webkit-transform .1s;
+    word-spacing: 0;
+}
+.movie-list-container .movie.active {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    border-color: #f24030;
+}
+.movie-list-container .movie img {
+    width: 100%;
+    height: 100%;
+}
+.movie-list-container .scroll-prev {
+    left: 0;
+    background: url(../images/banner.png) no-repeat;
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    top: 0;
+    background-position: 50%;
+    transform:rotate(180deg);
+}
+.movie-list-container .scroll-next {
+    right: 0;
+    background: url(../images/banner.png) no-repeat;
+    display: inline-block;
+    position: absolute;
+    width: 30px;
+    height: 100%;
+    top: 0;
+    background-position: 50%;
+}
+
+.footer {
+    background-color: black;
+    height:100px;
+    width: 100%;
+}

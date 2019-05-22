@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Price_System/.idea/Price_System2.iml" filepath="$PROJECT_DIR$/../Price_System/.idea/Price_System2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Price_System_Modify/.idea/Price_System_Modify.iml" filepath="$PROJECT_DIR$/../Price_System_Modify/.idea/Price_System_Modify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Python核心编程/.idea/Python核心编程.iml" filepath="$PROJECT_DIR$/../Python核心编程/.idea/Python核心编程.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/Python进阶/.idea/Python进阶.iml" filepath="$USER_HOME$/PycharmProjects/Python进阶/.idea/Python进阶.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bijia2.iml" filepath="$PROJECT_DIR$/.idea/bijia2.iml" />
+      <module fileurl="file://$USER_HOME$/Desktop/pilishen.com/.idea/pilishen.com.iml" filepath="$USER_HOME$/Desktop/pilishen.com/.idea/pilishen.com.iml" />
+      <module fileurl="file://F:/Python_WorkPlace/zlktQa/.idea/zlktQa.iml" filepath="F:/Python_WorkPlace/zlktQa/.idea/zlktQa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zlktqa/.idea/zlktqa.iml" filepath="$PROJECT_DIR$/../zlktqa/.idea/zlktqa.iml" />
+    </modules>
+  </component>
+</project>

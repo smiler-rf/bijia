@@ -1,0 +1,185 @@
+
+.container {
+    width: 1200px;
+    margin: 120px auto 80px auto;
+}
+.main a{
+    background-color: #e7e7e7;
+}
+.cinemas-list .cinemas-list-header {
+    font-size: 18px;
+    color: #333;
+    border-left: 4px solid #f03d37;
+    padding-left: 6px;
+    line-height: 18px;
+    margin: 0;
+}
+.cinemas-list .cinema-cell {
+    display: block;
+    padding: 20px 0;
+    border-bottom: 1px dashed #e5e5e5;
+}
+.cinemas-list .cinema-info {
+    display: inline-block;
+    max-width: 80%;
+}
+.cinemas-list .cinema-name {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.cinemas-list .cinema-address {
+    font-size: 14px;
+    line-height: 14px;
+    color: #999;
+}
+p {
+    margin: 0;
+        display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.cinemas-list .price {
+    float: right;
+    font-size: 12px;
+    color: #999;
+    height: 45px;
+    line-height: 45px;
+}
+.cinemas-list .price .rmb {
+    margin-right: -4px;
+}
+.red {
+    color: #f03d37;
+}
+.cinemas-list .price .price-num {
+    font-size: 16px;
+    margin-right: -3px;
+    font-weight: 700;
+}
+
+.cinema-pager{
+    margin-top: 20px;
+}
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+	}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+a:hover {
+	color: #FF6000;
+	text-decoration: none;
+}
+
+strong {
+	font-weight: bold;
+}
+
+pre {
+	padding: 0;
+	margin: 0;
+	font-family: "Courier","Courier New";
+}
+.content {
+	overflow: hidden;
+	width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.block {
+	background: rgba(0,0,0,0.1);
+	border-radius: 5px;
+	padding: 20px;
+	margin-bottom: 30px;
+	background: none repeat scroll 0 0 #FFFFFF;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+	position: relative;
+}
+.block:before,
+.block:after {
+	content:"";
+	position:absolute;
+	z-index:-2;
+}
+.block:before {
+	box-shadow:0 0 15px rgba(0,0,0,0.6);
+	top:50%;
+	bottom:0;
+	left:10px;
+	right:10px;
+	border-radius:100px / 10px;
+}
+
+.pagination-holder {
+	/*padding: 0 auto;*/
+	margin: 0 auto;
+    width: fit-content;
+}
+
+.pagination-holder.black {
+	padding: 20px 20px 15px 20px;
+	background: #444;
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+
+
+.show-list.active {
+    display: block;
+}
+.show-list {
+    display: none;
+}
+.movie-info {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.show-list .movie-info .movie-name {
+    display: inline-block;
+    margin: 0 20px 20px 0;
+    font-size: 26px;
+    font-weight: 400;
+    color: #333;
+}
+.show-list .movie-info .score {
+    display: inline-block;
+    font-size: 24px;
+    color: #faaf00;
+}
+
+.show-list .movie-info .movie-desc>div {
+    display: inline-block;
+    font-size: 14px;
+    color: #151515;
+    margin-bottom: 20px;
+    margin-right: 40px;
+}
+.show-list .movie-info .movie-desc .key {
+    color: #999;
+}
+
+.cinemas-list .price {
+    float: right;
+    font-size: 12px;
+    color: #999;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 50px;
+}
+.cinemas-list .price .price-num {
+    font-size: 16px;
+    margin-right: -3px;
+    font-weight: 700;
+}

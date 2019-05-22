@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}-电影票比价系统</title>
+        {% block head %}
+        {% endblock %}
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/base.css') }}">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+{#    <script src="/static/js/base.js"></script>#}
+</head>
+<body>
+    <div class="header">
+        <div class="header-inner">
+            <a href="/" class="logo" data-act="icon-click"></a>
+            <div class="city-container" data-val="{currentcityid:1 }">
+                <div class="city-selected">
+                    <div class="city-name">
+                        {{ city }}
+                        <span class="caret"></span>
+                    </div>
+                </div>
+                <div class="city-list" data-val="{ localcityid: 1 }">
+                    <div class="city-list-header">
+                        定位城市：
+                        <a class="js-geo-city" href={{ url_for("city",city="北京") }}>北京</a>
+                    </div>
+                    <ul>
+                        {% for line in cities %}
+                            <li>
+                                <span>{{ line.key }}</span>
+                                <div>
+                                    {% for city in line.cities %}
+                                        <a href={{ url_for('city',city=city) }}>{{ city }}</a>
+                                    {% endfor %}
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="main">
+                <a href={{ url_for('city',city=city) }} data-act="home-click" class="shou">首页</a>
+            </div>
+        </div>
+    </div>
+    {% block cinema %}{% endblock %}
+    <div class="container" id="app">
+        <div class="movie-list-container">
+            <div class="movie-list">
+                {% block movies %}{% endblock %}
+            </div>
+            <span class="scroll-prev"></span>
+            <span class="scroll-next"></span>
+        </div>
+        {% block main %}{% endblock %}
+        {% block pager %}{% endblock %}
+    </div>
+    <div class="footer">footer</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+
+{% block title %}
+影院
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{{ url_for('static',filename="css/cinema.css") }}">
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="/static/js/cinema.js"></script>
+    <script src="/static/js/base.js"></script>
+{% endblock %}
+
+{% block cinema %}
+<div class="cinema-container">
+    <div class="cinema-info">
+        <div>
+            <h3 class="cinema-name">{{ cinema.name }}</h3>
+            <p class="cinema-address">{{ cinema.address }}</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+{% block movies %}
+    {% for movie in movies %}
+        <div class="movie">
+            <img src={{ movie.image }} alt>
+        </div>
+    {% endfor %}
+{% endblock %}
+{% block main %}
+    {% for movie in movies %}
+        <div class="show-list">
+            <div class="movie-info">
+                <div>
+                    <h3 class="movie-name">{{ movie.name }}</h3>
+                    <span class="score">{{ movie.score }}</span>
+                </div>
+            </div>
+
+            <div class="show-date">
+                <span>观影时间 :</span>
+                {% for ticket in tickets %}
+                    {% if ticket.name == movie.name %}
+                        {% for date in ticket.date %}
+                            <span class="date-item">
+                                {{ date }}
+                            </span>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+            </div>
+        {% for ticket in tickets %}
+        {% if ticket.name == movie.name %}
+{#      当前选中电影的排片      #}
+        {% for day in ticket.plist.values() %}
+{#      每一天的排片      #}
+            <div class="plist-container">
+                <table class="plist">
+                    <thead>
+                        <tr>
+                          <th>放映时间</th>
+                          <th>语言版本</th>
+                          <th>放映厅</th>
+                          <th>售价（元）</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    {% for item in day %}
+{#                  每一条排片      #}
+                        <tr>
+                            <td>
+                                <span class="begin-time">{{ item["begin-time"] }}</span>
+                                <br>
+                                <span class="end-time">{{ item["end-time"] }}</span>
+                            </td>
+                            <td>
+                                <span class="lang">{{ item.language }}</span>
+                            </td>
+                            <td>
+                                <span class="hall">{{ item.hall }}</span>
+                            </td>
+                            <td>
+                                {% if item.price != "" and item.price != "0"%}
+                                    猫眼：<span class="sell-price"><span class="stonefont">{{ item.price }}</span></span>
+                                    <br>
+                                {% endif %}
+                                {% if item.nuo_price != "" and item.nuo_price != "0"%}
+                                    糯米：<span class="sell-price"><span class="stonefont">{{ item.nuo_price }}</span></span>
+                                    <br>
+                                {% endif %}
+                                {% if item.shi_price != "" and item.shi_price != "0" %}
+                                    时光：<span class="sell-price"><span class="stonefont">{{ item.shi_price }}</span></span>
+                                {% endif %}
+                            </td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        {% endfor %}
+        {% endif %}
+        {% endfor %}
+        </div>
+    {% endfor %}
+{% endblock %}
+
+
+{% block plist %}
+{% endblock %}

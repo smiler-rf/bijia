@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="Flask">
+    <option name="enabled" value="true" />
+  </component>
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$" />
+    <orderEntry type="jdk" jdkName="Python 3.6 (Python_WorkPlace)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Python进阶" />
+    <orderEntry type="module" module-name="Price_System_Modify" />
+    <orderEntry type="module" module-name="Python核心编程" />
+    <orderEntry type="module" module-name="Python核心编程" />
+    <orderEntry type="module" module-name="pilishen.com" />
+    <orderEntry type="module" module-name="pilishen.com" />
+    <orderEntry type="module" module-name="zlktqa" />
+    <orderEntry type="module" module-name="zlktQa" />
+    <orderEntry type="module" module-name="zlktqa" />
+    <orderEntry type="module" module-name="Price_System2" />
+  </component>
+  <component name="TemplatesService">
+    <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
+    <option name="TEMPLATE_FOLDERS">
+      <list>
+        <option value="$MODULE_DIR$/../bijia2\templates" />
+      </list>
+    </option>
+  </component>
+</module>
