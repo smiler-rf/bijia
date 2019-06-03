@@ -17,6 +17,8 @@
     <orderEntry type="module" module-name="zlktQa" />
     <orderEntry type="module" module-name="zlktqa" />
     <orderEntry type="module" module-name="Price_System2" />
+    <orderEntry type="module" module-name="贪吃蛇" />
+    <orderEntry type="module" module-name="数据分析师" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
